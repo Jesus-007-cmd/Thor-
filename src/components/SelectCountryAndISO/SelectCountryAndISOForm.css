@@ -1,0 +1,52 @@
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 3vh;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(45vw, 100vh, 70vw);
+  }
+  
+  .card-body {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .step-title {
+    font-size: clamp(1rem, 3.7vh, 3.7vw);
+    font-weight: bold;
+    color: #2C3792;
+    margin-bottom: 1rem;
+  }
+  
+  .iso-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .iso-list .form-check {
+    width: 50%;
+  }
+  
+  .form-label {
+    font-size: clamp(1rem, (1.7vh + 1.7vw) / 2, 1.7vw);
+  }
+  
+  .form-check-label {
+    font-size: clamp(1rem, (1.4vh + 1.4vw) / 2, 1.4vw);
+  }
+  .flag {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+  }
+    

@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import RegisterCompanyForm from './components/registercompany/RegisterCompanyForm';
 import SelectCountryAndISOForm from './components/selectcountryandiso/SelectCountryAndISOForm';

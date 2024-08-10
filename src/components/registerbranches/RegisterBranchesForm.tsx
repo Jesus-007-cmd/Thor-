@@ -9,7 +9,7 @@ const RegisterBranchesForm = () => {
     { id: 1, name: '', address: '', city: '', state: '' },
   ]);
 
-  const [sedes, setSedes] = useState([
+  const sedes = ([
     { vNombre: 'Sede Norte', vDireccion: 'Av. Principal 123', iId_Ubigeo: 'Lima', iId_Estado: 'Activo' },
     { vNombre: 'Sede Sur', vDireccion: 'Calle Secundaria 456', iId_Ubigeo: 'Cusco', iId_Estado: 'Activo' },
     { vNombre: 'Sede Este', vDireccion: 'Calle Secundaria 325', iId_Ubigeo: 'Cusco', iId_Estado: 'Activo' },
@@ -25,9 +25,6 @@ const RegisterBranchesForm = () => {
     setBranches([...branches, { id: branches.length + 1, name: '', address: '', city: '', state: '' }]);
   };
 
-  const removeBranch = (id) => {
-    setBranches(branches.filter(branch => branch.id !== id));
-  };
 
   
   const handleNext = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => { // Tipado del evento
@@ -107,7 +104,7 @@ const RegisterBranchesForm = () => {
                   <td>{sede.iId_Ubigeo}</td>
                   <td>{sede.iId_Estado}</td>
                   <td>
-                    <button className="remove-branch-button" onClick={() => removeBranch(index)}>
+                    <button className="remove-branch-button" > {/*onClick={() => removeBranch(index)}>*/}
                       Eliminar
                     </button>
                   </td>

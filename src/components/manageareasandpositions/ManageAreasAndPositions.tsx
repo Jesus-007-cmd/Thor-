@@ -18,9 +18,6 @@ const ManageAreasAndPositions = () => {
         setPositions([...positions, { id: positions.length + 1, name: '', area: '' }]);
     };
 
-    const removePosition = (id) => {
-        setPositions(positions.filter(position => position.id !== id));
-    };
 
     const toggleAreas = () => setShowAreas(!showAreas);
     const togglePositions = () => setShowPositions(!showPositions);
@@ -29,9 +26,6 @@ const ManageAreasAndPositions = () => {
         setAreas([...areas, { id: areas.length + 1, name: '', position: '', module: 'RRHH', iso: '' }]);
     };
 
-    const removeArea = (id) => {
-        setAreas(areas.filter(area => area.id !== id));
-    };
 
     const progress = 80;
 
@@ -76,7 +70,7 @@ const ManageAreasAndPositions = () => {
                             </div>
                         </div>
                         {index > 0 && (
-                            <button type="button" className="remove-area-button" onClick={() => removeArea(area.id)}>
+                            <button type="button" className="remove-area-button" >{/*onClick={() =>  removeArea(area.id)}>*/}
                                 Eliminar
                             </button>
                         )}
@@ -112,7 +106,7 @@ const ManageAreasAndPositions = () => {
                                     <td>{area.name}</td>
                                     <td>{area.position}</td>
                                     <td>
-                                        <button type="button" className="remove-area-button" onClick={() => removeArea(area.id)}>
+                                        <button type="button" className="remove-area-button" >{/* onClick={() => removeArea(area.id)}>*/}
                                             Eliminar
                                         </button>
                                     </td>
@@ -149,7 +143,7 @@ const ManageAreasAndPositions = () => {
                                         <td>{position.name}</td>
                                         <td>{position.area}</td>
                                         <td>
-                                            <button className="remove-position-button" onClick={() => removePosition(position.id)}>
+                                            <button className="remove-position-button" > {/*onClick={() => removePosition(position.id)}>*/}
                                                 Eliminar
                                             </button>
                                         </td>

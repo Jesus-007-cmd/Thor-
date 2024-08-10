@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './RegisterWorkerForm.css';
 import logo from '/public/Frame.svg'; // Asegúrate de que la ruta del logo sea correcta
 
 const RegisterWorkerForm = () => {
-  const [workers, setWorkers] = useState([
+  const workers= ([
     {
       id: 1,
       dni: '12345678',

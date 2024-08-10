@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Cambiado de useHistory a useNavigate
+import { useNavigate } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '/public/Frame.svg';
 import analyticsImage from '/public/undraw_real_time_analytics.svg';
@@ -7,13 +7,13 @@ import './RegisterCompanyForm.css';
 
 const RegisterCompanyForm = () => {
   const [showPhoneInput, setShowPhoneInput] = useState(false);
-  const navigate = useNavigate(); // Cambiado de useHistory a useNavigate
+  const navigate = useNavigate(); 
 
   const handleRegisterClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => { // Tipado del evento
     event.preventDefault();
     navigate('/select-country-iso'); // Cambiado de history.push a navigate
   };
-
+  
   return (
 
     <div className="container">

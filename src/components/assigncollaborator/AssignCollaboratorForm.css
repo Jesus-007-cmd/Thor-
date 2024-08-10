@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .collaborator-container {
+    background: white;
+    padding: clamp(1rem, 2vh, 2rem);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: clamp(300px, 50%, 800px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .collaborator-header {
+    text-align: center;
+    margin-bottom: clamp(1rem, 2vh, 2rem);
+  }
+  
+  .logo {
+    width: clamp(30px, 5vh, 50px);
+    height: clamp(30px, 5vh, 50px);
+  }
+  
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+  }
+  
+  .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .collaborator-form {
+    width: 100%;
+  }
+  
+  .collaborator-form h3 {
+    margin-bottom: clamp(1rem, 1.5vh, 2rem);
+  }
+  
+  .form-group {
+    margin-bottom: clamp(0.5rem, 1vh, 1rem);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: clamp(0.25rem, 0.5vh, 0.5rem);
+    font-size: clamp(0.8rem, 1vh, 1rem);
+  }
+  
+  .form-control {
+    padding: clamp(0.25rem, 0.5vh, 0.5rem);
+    font-size: clamp(0.8rem, 1vh, 1rem);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    padding: clamp(0.5rem, 1vh, 0.75rem) clamp(1rem, 1.5vh, 1.5rem);
+    font-size: clamp(0.8rem, 1vh, 1rem);
+    background: #6c63ff; /* Cambiado a morado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #574b90; /* Tono más oscuro de morado */
+  }
+  
+  .btn-link {
+    padding: clamp(0.5rem, 1vh, 0.75rem) clamp(1rem, 1.5vh, 1.5rem);
+    font-size: clamp(0.8rem, 1vh, 1rem);
+    background: none;
+    color: #6c63ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    margin-top: 1rem; /* Espacio arriba del botón Omitir */
+  }
+  
+  .btn-link:hover {
+    color: #574b90;
+  }
+  
+  .title {
+    font-size: clamp(1rem, (2vh + 2vw) / 2, 2.5vw);
+    padding-bottom: clamp(1rem, 2vh, 3vh);
+  }
+  

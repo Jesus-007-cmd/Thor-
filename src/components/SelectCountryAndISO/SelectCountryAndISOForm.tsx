@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '/public/Frame.svg';
 import mx from '/public/flags/mx.svg';
@@ -7,7 +8,12 @@ import './SelectCountryAndISOForm.css';
 const SelectCountryAndISOForm = () => {
   const [selectedCountry, setSelectedCountry] = useState('pe');
   const [selectedISO, setSelectedISO] = useState('');
+  const navigate = useNavigate(); 
 
+  const handleSiguienteClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => { // Tipado del evento
+    event.preventDefault();
+    navigate('/assign-collaborator'); 
+  };
  
     const countries = [
         { name: 'Afghanistan', code: 'af' },
@@ -214,7 +220,8 @@ const SelectCountryAndISOForm = () => {
 
         <div className="d-flex justify-content-between">
           <button type="button" className="btn btn-secondary">Cancelar</button>
-          <button type="button" className="btn btn-primary">Siguiente</button>
+          <button type="button" className="btn btn-primary" onClick={handleSiguienteClick}>Siguiente</button>
+          
         </div>
       </div>
     </div>
